@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+        <script src="skrypt.js"></script>
+        <title>Memory</title>
+    </head>
+    <body>
+
+        <header>
+            <h1>Pamięć</h1>
+        </header>
+
+        <section>
+            <p> 
+              <div id="preGame">
+				<div>
+
+				</div>
+                <div>
+                  Rozmiary mapy:
+                </div>
+                <div>
+                  Szerokość: <input type="text" id="width">
+                </div>
+                <div>
+                  Wysokość: <input type="text" id="height">
+                </div>
+                <div>
+                  Limit czasu: <input type="text" id="timelimit">
+                </div>
+                <div class="button" id="start">Start</div>
+              </div>
+              </p>
+              <p>
+                <div>
+                    Czas: <span id="time">0</span> 
+                </div>
+                <div>
+                    Wynik: <span id="score">0</span> 
+                </div>
+              </p>
+
+            <div id="board"></div>
+        </section>
+        <footer>
+            <p>
+                <p>Copyright &copy; 2014 jkozak.pl</p>
+            </p>
+			<p>
+				<p>zaimplementowane zmiany: rozmiar pola, koniec gry, brak klikania na już odkryte pola</p>
+        </footer>
+    </body>
+</html>
