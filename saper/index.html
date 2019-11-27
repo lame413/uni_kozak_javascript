@@ -13,46 +13,40 @@
         </header>
 
         <section>
+            <p> 
+              <div id="preGame">
+				<div>
+
+				</div>
+                <div>
+                  Rozmiary mapy:
+                </div>
+                <div>
+                  Szerokość: <input type="text" id="width">
+                </div>
+                <div>
+                  Wysokość: <input type="text" id="height">
+                </div>
+                <div>
+                  Ilość min: <input type="text" id="minecount">
+                </div>
+                <div class="button" id="start">Start</div>
+              </div>
+              </p>
+
+              <p>
+                <div>
+                    Czas: <span id="time">0</span> 
+                </div>
+                <div>
+                    Wynik: <span id="score">0</span> 
+                </div>
+              </p>
+
             <p>
                 Czas: <span id="time"></span> 
             </p>
-            <table >
-                <tr>
-                    <td id="1_1" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                    <td id="1_2" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                    <td id="1_3" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                    <td id="1_4" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                    <td id="1_5" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                </tr>
-                <tr>
-                    <td id="2_1" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                    <td id="2_2" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                    <td id="2_3" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                    <td id="2_4" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                    <td id="2_5" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                </tr>
-                <tr>
-                    <td id="3_1" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                    <td id="3_2" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                    <td id="3_3" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                    <td id="3_4" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                    <td id="3_5" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                </tr>
-                <tr>
-                    <td id="4_1" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                    <td id="4_2" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                    <td id="4_3" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                    <td id="4_4" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                    <td id="4_5" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                </tr>
-                <tr>
-                    <td id="5_1" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                    <td id="5_2" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                    <td id="5_3" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                    <td id="5_4" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                    <td id="5_5" ondblclick="cellClick(this)" onclick="mine(this)"></td>
-                </tr>
-            </table>
+            <table id="boardHTML"></table>
 
             <p>
                 <ul>
@@ -64,6 +58,9 @@
         <footer>
             <p>
                 <p>Copyright &copy; 2013 jkozak.pl</p>
+            </p>
+            <p>
+                <p>zaimplementowane zmiany: rozmiar planszy, autoodkrywanie, różna ilość min</p>
             </p>
         </footer>
     </body>
